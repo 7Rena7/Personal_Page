@@ -1,6 +1,6 @@
 # Personal_Page
 
-My name is Renato Corbellini, I'm an advenced student in Systems engineering. I also take some time off school to attend some online courses about 
-web development (HTML, CSS and Javascript for now). This is my first time experimenting with github, so far it's been great! 
+My name is Renato Corbellini and I'm an advanced student in Systems engineering. I like taking some time off school to attend online courses about 
+web development (HTML, CSS and Javascript for now). This is my first time experiencing github,it's been great so far.
 
 Thanks for reading, cheers!
