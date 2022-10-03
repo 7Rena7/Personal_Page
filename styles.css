@@ -1,0 +1,14 @@
+body {
+    background-color:lightslategrey;
+}
+
+nav img {
+    max-width: 50px;
+    display: inline-block;
+    float: left;
+}
+
+nav p {
+    diplay: inline-block;
+    margin-left: 20px;
+}
