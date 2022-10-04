@@ -23,18 +23,19 @@ header {
 }
 
 header figure img {
+    cursor: pointer;
     max-width: 50px;
     margin: 0 40px 0 0;
 }
 
 .logo__container {
-    cursor: pointer;
     margin-right: auto;
     display: flex;
     align-items: center;
 }
 
 .logo__caption {
+    cursor: pointer;
     font-weight: 500;
     font-size: 20px;
     transition: all 0.3s ease 0s;
