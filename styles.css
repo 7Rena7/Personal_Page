@@ -7,7 +7,7 @@
     background-color: #24252a;
 }
 
-li, a, button, header p{
+li, a, button, .logo__caption{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -22,14 +22,26 @@ header {
     padding: 30px 10%;
 }
 
-header img {
+header figure img {
     max-width: 50px;
-    margin: 0 15px;
+    margin: 0 40px 0 0;
 }
 
-.logo {
+.logo__container {
     cursor: pointer;
     margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo__caption {
+    font-weight: 500;
+    font-size: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.logo__caption:hover {
+    color: #0088a9;
 }
 
 .nav__links {
@@ -42,11 +54,17 @@ header img {
 }
 
 .nav__links li a {
+    background-image: linear-gradient(90deg, #0088a9, #0088a9);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: bottom;
     transition: all 0.3s ease 0s;
+    padding-bottom: 5px;
 }
 
 .nav__links li a:hover {
-    color: #0088a9;
+    color: #bebfbf;
+    background-size: 100% 3px;
 }
 
 button {
@@ -63,26 +81,3 @@ button:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
 
-
-
-
-/* body {
-    background-color:aliceblue;
-    font-family: 'Noto Sans Mono', monospace;
-}
-
-header p {
-    font-weight: 800;
-    font-size: 24px;
-}
-
-header img {
-    max-width: 50px;
-    display: inline-block;
-    float: left;
-}
-
-header ul {
-    font-weight: 400;
-    font-size: 18px;
-} */
