@@ -42,7 +42,7 @@ li, button, .logo__caption{
 
 .header figure img {
     cursor: pointer;
-    max-width: 50px;
+    max-width: 60px;
     margin: 0 40px 0 0;
 }
 
@@ -105,7 +105,15 @@ li, button, .logo__caption{
 
 /* MAIN */
 
+.main {
+    height: 1000px;
+    align-items: center;
+    padding: 50px 10%;
+}
 
+.main p {
+    color: var(--text-color);
+}
 
 /* FOOTER */
 
@@ -134,7 +142,7 @@ li, button, .logo__caption{
 .footer__col h4 {
     font-weight: 600;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     position: relative;
 }
 
@@ -149,18 +157,37 @@ li, button, .logo__caption{
     width: 30%;
 }
 
-.footer_col ul li:not(:last-child) {
-    margin-bottom: 10px;
+.footer__col ul li:not(:last-child) {
+    margin-bottom: 15px;
 }
 
-.footer_col ul li a {
+.footer__col ul li a {
     font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease; 
 }
 
-.footer__container ul {
+.footer__col ul li a:hover {
+    color: var(--text-color-hover);
+    padding-left: 8px;
+}
+
+.footer__col ul {
     list-style: none;
 }
 
-.footer__container li {
-    text-decoration: none;
+.footer__col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.footer__col .social-links a:hover {
+    background-color: var(--accent);
 }
