@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -15,33 +11,57 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
+        <!-- Navigation Bar -->
         <header class="header">
             <figure class="logo__container">
-                <img src="./img/profilePhotoRounded.png" alt="Profile Photo">
-                <figcaption class="logo__caption">Renato Corbellini</figcaption>
+                <!-- <img src="./img/profilePhotoRounded.png" alt="Profile Photo"> -->
+                <figcaption class="logo__caption"><strong>renato</strong>corbellini</figcaption>
             </figure>
-            
             <nav>
                 <ul class="nav__links">
                     <!-- <li><a href="#">Services</a></li> -->
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">projects</a></li>
                 </ul>
             </nav>
-            <a class="cta" href="#"><button class="contact__button">Contact</button></a>
+            <a class="cta" href="#"><button class="contact__button">contact</button></a>
         </header>
+        <!-- Main Section -->
         <main class="main">
-            <section class="projects">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatem nihil dicta veritatis dolorum harum repudiandae id quod voluptates repellat. Iste laudantium corporis error animi nemo dolorem distinctio libero ipsam!</p>
-            </section>
             <section class="about">
-
+                <div class="about-info">
+                    <h2>Hi. I'm Renato!</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatem nihil dicta veritatis dolorum harum repudiandae id quod voluptates repellat. Iste laudantium corporis error animi nemo dolorem distinctio libero ipsam!</p>
+                    <!-- <button class="btn-download">download <strong>cv</strong><i class="fa fa-light fa-download"></i></button> -->
+                    <a href="./files/renatoCorbelliniCVENG.pdf" download="Renato Corbellini CV" class="btn-download">download <strong>cv</strong><i class="fa fa-light fa-download"></i></a>
+                </div>
+                <div class="about-img">
+                    <img src="./img/profilePhotoRounded.png" alt="Profile photo">
+                </div>
             </section>
+            <div class="divider"> </div>
+            <section class="projects grid-container">
+                <h2 class="grid-title">Personal Projects</h2>
+                <div class="project-1 grid-item">
+                    <h2>Project 1 Name</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatem nihil dicta veritatis dolorum harum repudiandae id quod voluptates repellat. Iste laudantium corporis error animi nemo dolorem distinctio libero ipsam!</p>
+                    <ul class="project1-links grid-item-links">
+                        <a href="#" target="_blank"><i class="fa fa-link"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    </ul>
+                </div>
+                <div class="project-2 grid-item">
+                    <h2>Project 2 Name</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatem nihil dicta veritatis dolorum harum repudiandae id quod voluptates repellat. Iste laudantium corporis error animi nemo dolorem distinctio libero ipsam!</p>
+                    <ul class="project2-links grid-item-links">
+                        <a href="#" target="_blank"><i class="fa fa-link"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    </ul>
+                </div>
+            </section>
+            <div class="divider"> </div>
         </main>
+        <!-- Footer -->
         <footer class="footer">
             <div class="footer__container">
                 <div class="footer__row">
@@ -54,17 +74,9 @@
                             <li><a href="#">Another Section</a></li>
                         </ul>
                     </div>
-                    <!-- <div class="footer__col">
-                        <h4>Social Media</h4>
-                        <ul>
-                            <li><a href="https://www.linkedin.com/in/renato-corbellini-99155a175/" target="_blank">LinkedIn</a></li>
-                            <li><a href="https://github.com/7Rena7" target="_blank">Github</a></li>
-                            <li><a href="https://www.instagram.com/renacorbellini/" target="_blank">Instagram</a></li>
-                        </ul>
-                    </div> -->
                     <div class="footer__col">
                         <h4>Follow me!</h4>
-                        <div class="social-links">
+                        <ul class="social-links">
                             <a href="https://www.linkedin.com/in/renato-corbellini-99155a175/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             <a href="https://github.com/7Rena7" target="_blank"><i class="fab fa-github"></i></a>
                             <a href="https://www.instagram.com/renacorbellini/" target="_blank"><i class="fab fa-instagram"></i></a>
