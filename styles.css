@@ -7,6 +7,7 @@
     --text-color-hover: rgb(159, 160, 161);
     --accent: rgb(232, 73, 126);
     --accent-hover: rgba(233, 47, 109, 0.8); 
+    --accent-selection: rgba(151, 7, 55, 0.8);
 }
 
 * {
@@ -31,6 +32,10 @@ a, h4 {
     margin: 100px 0 100px -5vw;
     width: 90vw;
     box-shadow: 0px 0px 25px #888888, 3px 3px 8px #888888;
+}
+
+::selection {
+    background-color: var(--accent-selection);
 }
 
 /* HEADER */
@@ -62,7 +67,7 @@ li, button, .logo__caption{
 }
 
 .logo__caption {
-    cursor: pointer;
+    cursor: default;
     font-weight: 500;
     font-size: 22px;
     transition: all 0.3s ease 0s;
@@ -131,6 +136,7 @@ li, button, .logo__caption{
 
 .about-info h2 {
     font-size: 28px;
+    font-weight: 300;
 }
 
 .about-info p {
@@ -173,11 +179,13 @@ li, button, .logo__caption{
 
 .grid-title {
     font-size: 28px;
+    font-weight: 300;
     grid-column: 1 / span 2;
 }
 
 .grid-item h2 {
     font-size: 20px;
+    font-weight: 300;
 }
 
 .grid-item p {
@@ -220,13 +228,11 @@ li, button, .logo__caption{
 }
 
 .footer__col {
-    /* justify-content: space-between; */
     width: 25%;
-    padding: 0 15px;
 } 
 
 .footer__col h4 {
-    font-weight: 600;
+    font-weight: 300;
     font-size: 18px;
     margin-bottom: 30px;
     position: relative;
