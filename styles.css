@@ -5,9 +5,11 @@
 :root {
     --text-color: rgb(237, 240, 241);
     --text-color-hover: rgb(159, 160, 161);
+    --text-color-accent: rgb(189, 191, 193);
     --accent: rgb(232, 73, 126);
     --accent-hover: rgba(233, 47, 109, 0.8); 
     --accent-selection: rgba(151, 7, 55, 0.8);
+    --background: rgb(36, 37, 42);
 }
 
 * {
@@ -18,7 +20,7 @@
 }
 
 body {
-    background-color: #24252a;
+    background-color: var(--background);
 }
 
 a, h4 {
@@ -139,9 +141,24 @@ li, button, .logo__caption{
     font-weight: 300;
 }
 
+.about-info img {
+    max-width: 20px;
+}
+
 .about-info p {
-    margin: 20px 0 30px 0;
+    margin: 35px 0 30px 0;
     font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-info p a {
+    color: var(--text-color-accent);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about-info p a:hover {
+    color: var(--accent);
 }
 
 .btn-download {
@@ -170,7 +187,7 @@ li, button, .logo__caption{
 
 .projects {
     display: grid;
-    gap: 25px 70px;
+    gap: 50px 120px;
     color: var(--text-color);
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -178,22 +195,66 @@ li, button, .logo__caption{
 
 
 .grid-title {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 300;
     grid-column: 1 / span 2;
 }
 
-.grid-item h2 {
+.grid-item h3 {
     font-size: 20px;
     font-weight: 300;
 }
 
 .grid-item p {
     font-size: 18px;
-    margin: 10px 0;
+    margin: 10px 0 27px 0;
+    line-height: 1.6;
 }
 
-.grid-item .grid-item-links a {
+.grid-item p a {
+    color: var(--text-color-accent);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.grid-item p a:hover {
+    color: var(--accent);
+}
+
+.btn-Project-link {
+    padding: 5px 15px;
+    margin-right: 15px;
+    font-size: 18px;
+    background-color: var(--background);
+    border: 2px solid var(--accent);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-Project-link i {
+    margin-left: 10px;
+}
+
+.btn-Project-link:hover {
+    box-shadow: 0 0 8px var(--accent-hover);
+}
+
+.btn-Project-github {
+    padding: 5px 8px;
+    font-size: 18px;
+    background-color: var(--background);
+    border: 2px solid var(--accent);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-Project-github:hover {
+    box-shadow: 0 0 8px var(--accent-hover);
+}
+
+/* .grid-item .grid-item-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
@@ -207,7 +268,7 @@ li, button, .logo__caption{
 
 .grid-item .grid-item-links a:hover {
     background-color: var(--accent);
-}
+} */
 
 /* FOOTER */
 
