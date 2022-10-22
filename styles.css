@@ -6,10 +6,11 @@
     --text-color: rgb(237, 240, 241);
     --text-color-hover: rgb(159, 160, 161);
     --text-color-accent: rgb(189, 191, 193);
-    --accent: rgb(232, 73, 126);
-    --accent-hover: rgba(233, 47, 109, 0.8); 
+    --accent: rgb(235, 94, 40);
+    --accent-hover: rgba(235, 94, 40, 0.8); 
     --accent-selection: rgba(151, 7, 55, 0.8);
-    --background: rgb(36, 37, 42);
+    --background-dark: rgb(37, 36, 34);
+    --background-light: rgb(255, 252, 242);
 }
 
 * {
@@ -20,7 +21,7 @@
 }
 
 body {
-    background-color: var(--background);
+    background-color: var(--background-dark);
 }
 
 a, h4 {
@@ -31,7 +32,7 @@ a, h4 {
 .divider {
     height: 2px;
     background-color: var(--text-color-hover);
-    margin: 100px 0 100px -5vw;
+    margin: 10px 0 10px -5vw;
     width: 90vw;
     box-shadow: 0px 0px 25px #888888, 3px 3px 8px #888888;
 }
@@ -129,6 +130,7 @@ li, button, .logo__caption{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .about-info {
@@ -191,6 +193,7 @@ li, button, .logo__caption{
     color: var(--text-color);
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
+    margin: 100px 0;
 }
 
 
@@ -225,7 +228,7 @@ li, button, .logo__caption{
     padding: 5px 15px;
     margin-right: 15px;
     font-size: 18px;
-    background-color: var(--background);
+    background-color: var(--background-dark);
     border: 2px solid var(--accent);
     border-radius: 50px;
     cursor: pointer;
@@ -236,93 +239,94 @@ li, button, .logo__caption{
     margin-left: 10px;
 }
 
-.btn-Project-link:hover {
-    box-shadow: 0 0 8px var(--accent-hover);
-}
-
 .btn-Project-github {
     padding: 5px 8px;
     font-size: 18px;
-    background-color: var(--background);
+    background-color: var(--background-dark);
     border: 2px solid var(--accent);
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
-.btn-Project-github:hover {
-    box-shadow: 0 0 8px var(--accent-hover);
+.btn-Project-link:hover,.btn-Project-github:hover {
+    box-shadow: 0 0 20px var(--accent-hover);
 }
 
 /* CONTACT */
 
 .container {
-    position: relative;
+    /* position: relative; */
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    padding: 20px 100px;
-}
-
-.container::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: url('./img/contact.jpg') no-repeat center;
-    background-size: cover;
-    z-index: -1;
-    filter: blur(5px);
-    border-radius: 5px;
+    max-width: 100%;
+    /* height: 400px; */
 }
 
 .contact-box {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
     justify-content: center;
     align-items: center;
-    text-align: center;
-    background-color: #fff;
-    width: 70%;
+    text-align: left;
+    max-width: 50%;
     margin: 40px 0;
     border-radius: 3px;
 }
 
 .form {
-    padding: 25px 40px;
+    /* padding: 25px 40px; */
+    color: var(--text-color);
 }
 
-.form h2 {
+.form h3 {
     position: relative;
     padding-bottom: 10px;
     margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 300;
 }
 
-.form h2::after {
+/* .form h2::after {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 15%;
     bottom: 0;
     transform: translateX(-50%);
     height: 4px;
     width: 50px;
     border-radius: 2px;
     background-color: var(--accent);
-}
+} */
 
 .field {
     width: 100%;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
     outline: none;
     border: 2px solid rgb(0, 0, 0);
-    background-color: rgba(230, 230, 230, 0.6);
+    background-color: rgb(108, 109, 109);
+    color: var(--text-color);
+    font-size: 18px;
     margin-bottom: 22px;
     transition: 0.3;
+    border-radius: 5px;
+}
+
+.field::placeholder{
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.message {
+    resize: none;
+}
+
+.btn-send-email {
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-left: auto;
+    position: relative;
 }
 
 /* FOOTER */
@@ -330,6 +334,7 @@ li, button, .logo__caption{
 .footer {
     align-items: center;
     padding: 0 10% 30px 10%;
+    margin-top: 70px;
 }
 
 .footer__container {
