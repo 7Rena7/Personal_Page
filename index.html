@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Renato Corbellini</title>
+        <title>Renato Corbellini · Software Developer</title>
         <meta name="Renato Corbellini" content="Javascript Algorithms CSS HTML Personal Projects">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./main/styles.css">
@@ -12,57 +12,75 @@
     </head>
     <body>
         <!-- Navigation Bar -->
-        <header class="header">
+        <!-- <header class="header">
             <figure class="logo__container">
-                <!-- <img src="./img/profilePhotoRounded.png" alt="Profile Photo"> -->
                 <figcaption class="logo__caption"><strong>renato</strong>corbellini</figcaption>
             </figure>
             <nav>
                 <ul class="nav__links">
-                    <!-- <li><a href="#">Services</a></li> -->
                     <li><a href="#">about</a></li>
                     <li><a href="#">projects</a></li>
                 </ul>
             </nav>
             <a class="cta" href="#"><button class="contact__button">contact</button></a>
-        </header>
+        </header> -->
         <!-- Main Section -->
         <main class="main">
             <!-- About Section -->
-            <section class="about">
-                <div class="about-info">
-                    <h2>Hi, i'm <strong>Renato</strong>!</h2>
-                    <p>I'm a <strong>software developer</strong> from <span title="Uruguay">&#x1F1FA;&#x1F1FE;</span>, based in <span title="Argentina">&#x1F1E6;&#x1F1F7;</span>. <br> <br>
-                    Currently working as a <i>Tech Implementation Analyst</i> at <a href="https://onetree.com/" target="_blank">Onetree</a>.  At the same time, I'm finishing my last year at <a href="https://www.frcu.utn.edu.ar/" target="_blank">university</a> as a <i>System Analyst</i>. <br>
-                    </p>
-                    <a href="./files/renatoCorbelliniCVENG.pdf" download="Renato Corbellini CV" class="btn-download">download <strong>cv</strong><i class="fa fa-light fa-download"></i></a>
-                </div>
+            <section class="about section-odd">
                 <div class="about-img">
                     <img src="./img/profilePhotoRounded.png" alt="Profile photo">
                 </div>
+                <div class="about-info">
+                    <h2>Hi, i'm <strong>Renato</strong>!</h2> <br>
+                    <p>I'm a <strong>software developer</strong> from <span title="Uruguay">&#x1F1FA;&#x1F1FE;</span>, based in <span title="Argentina">&#x1F1E6;&#x1F1F7;</span>.</p> <br>
+                    <p>Currently working as a <i>Tech Implementation Analyst</i> at <a href="https://onetree.com/" target="_blank">Onetree</a> and finishing my last year at <a href="https://www.frcu.utn.edu.ar/" target="_blank">university</a> as a <i>System Analyst</i>. </p> <br>
+                    <p>You can know more about my education and experience on my <a href="https://www.linkedin.com/in/renato-corbellini-99155a175/" target="_blank">LinkedIn profile</a>, or download my CV from the button below.
+                    </p> <br> <br>
+                    <!-- <a href="./files/renatoCorbelliniCVENG.pdf" download="Renato Corbellini CV" class="btn">download cv  <i class="fa fa-light fa-download"></i></a> -->
+                    <button class="btn">
+                        <a href="./files/renatoCorbelliniCVENG.pdf" download="Renato Corbellini CV" ></a> download cv  <i class="fa fa-light fa-download"></i>
+                    </button>
+                </div>
             </section>
-            <div class="divider"> </div>
+            <!-- <div class="divider"> </div> -->
             <!-- Projects Section -->
-            <section class="projects grid-container">
-                <h2 class="grid-title">Personal projects</h2>
-                <div class="project-1 grid-item">
-                    <h3><i>FreeCodeCamp</i> JavaScript Challenges</h3>
-                    <p>My solutions to the challenges presented in the <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/">FreeCodeCamp JavaScript Algorithms and Data Structures Course</a>. <br> <br>
-                    Some of this challenges include a <strong>Roman Numeral Converter</strong>, <strong>Caesars Cipher</strong> and <strong>Telephone Number Validator</strong>.</p>
-                    <a href="#" class="btn-Project-link" target="_blank">visit site<i class="fa fa-link"></i></a>
-                    <a href="#" class="btn-Project-github" target="_blank"><i class="fab fa-github"></i></a>
-                    
-                </div>
-                <div class="project-2 grid-item">
-                    <h3>Project 2 name</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatem nihil dicta veritatis dolorum harum repudiandae id quod voluptates repellat. Iste laudantium corporis error animi nemo dolorem distinctio libero ipsam!</p>
-                    <a href="#" class="btn-Project-link" target="_blank">visit site<i class="fa fa-link"></i></a>
-                    <a href="#" class="btn-Project-github" target="_blank"><i class="fab fa-github"></i></a>
+            <section class="section-even">
+                <div class="projects">
+                    <div class="grid-container">
+                        <h2 class="grid-title">Personal projects</h2>
+                        <div class="project-1 grid-item">
+                            <h3><i>FreeCodeCamp</i> JavaScript Challenges</h3> <br>
+                            <p>My solutions to the challenges presented in the <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank"><i><strong>JavaScript Algorithms and Data Structures </strong></i></a>. </p> <br>
+                                <p>Some of this challenges include a <strong>Roman Numeral Converter</strong>, <strong>Caesars Cipher</strong>
+                                and
+                                <strong>Telephone Number Validator</strong>.</p>
+                            <button class="btn">
+                                <a href="#" target="_blank"></a>visit site  <i
+                                    class="fa fa-light fa fa-link"></i>
+                            </button>
+                            <button class="btn-secondary">
+                                <a href="#" target="_blank"></a><i class="fab fa-github"></i>
+                            </button>
+                        </div>
+                        <div class="project-2 grid-item">
+                            <h3>Project 2 name</h3> <br>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatem nihil dicta veritatis dolorum harum
+                            repudiandae id quod voluptates repellat. Iste laudantium corporis error animi nemo dolorem distinctio libero
+                            ipsam!</p>
+                            <button class="btn">
+                                <a href="#" target="_blank"></a>visit site <i class="fa fa-light fa fa-link"></i>
+                            </button>
+                            <button class="btn-secondary">
+                                <a href="#" target="_blank"></a><i class="fab fa-github"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <div class="divider"> </div>
+            <!-- <div class="divider"> </div> -->
             <!-- Contact -->
-            <section>
+            <!-- <section>
                 <div class="container">
                     <div class="contact-box">
                         <div class="form">
@@ -75,11 +93,11 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <div class="divider"> </div>
+            </section> -->
+            <!-- <div class="divider"> </div> -->
         </main>
         <!-- Footer -->
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="footer__container">
                 <div class="footer__row">
                     <div class="footer__col">
@@ -100,7 +118,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
         
         <script type="module" src="./main/index.js" async defer></script>
     </body>
