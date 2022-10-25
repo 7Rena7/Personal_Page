@@ -349,6 +349,22 @@ a, figcaption {
     background-color: var(--accent);
 }
 
+/* CREDITS */
+
+.credits {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.credits p{
+    font-size: 12px;
+}
+
 
 /* MEDIA QUERIES */
 
