@@ -8,7 +8,7 @@
     --text-color-hover: rgb(159, 160, 161);
     --text-color-accent: rgb(189, 191, 193);
     --accent: rgb(235, 94, 40);
-    --accent-hover: rgba(182, 90, 54, 0.8); 
+    --accent-hover: rgba(235, 94, 40); 
     --accent-selection: rgba(235, 94, 40, 0.8);
     --background-dark: rgb(37, 36, 34);
     --background-light: rgb(255, 252, 242);
@@ -58,8 +58,8 @@ a, figcaption {
 }
 
 .btn, .btn-secondary {
-    padding: 0.7rem 1.3rem;
-    font-size: 22px;
+    padding: 0.6rem 2rem;
+    font-size: 20px;
     background-color: var(--accent);
     border: none;
     border-radius: 50px;
@@ -67,12 +67,9 @@ a, figcaption {
     transition: all 0.3s ease 0s;
 }
 
-.btn-secondary {
-    padding: 0.7rem 0.9rem;
-}
-
 .btn:hover {
     background-color: var(--accent-hover); 
+    box-shadow: 0 0 15px var(--accent-hover);
 }
 
 /* .divider {
@@ -191,141 +188,79 @@ a, figcaption {
 
 .flex-container {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     flex-wrap: wrap;
 }
 
 .flex-container > * {
     flex: 1;
+    min-width: 40%;
 }
 
-/* .grid-container {
-    display: grid;
-    gap: 1rem 2.5rem;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-}
-
-.grid-title {
-    grid-column: 1 / span 2;
-}
-
-.grid-item p {
-    max-width: 700px;
-}
-
-.grid-item button {
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.grid-item button:hover {
-    color: var(--accent);
-} */
-
-/* .btn-Project-link {
-    padding: 5px 15px;
-    margin-right: 15px;
-    font-size: 18px;
+.btn-github {
+    padding: 0.5rem 0.8rem;
+    font-size: 20px;
     background-color: var(--background-dark);
     border: 2px solid var(--accent);
+    margin-left: 1rem;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
-.btn-Project-link i {
-    margin-left: 10px;
-} */
-
-/* .btn-Project-github {
-    padding: 5px 8px;
-    font-size: 18px;
-    background-color: var(--background-dark);
-    border: 2px solid var(--accent);
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-.btn-Project-link:hover,.btn-Project-github:hover {
+.btn-github:hover {
     box-shadow: 0 0 20px var(--accent-hover);
-} */
+}
 
 /* CONTACT */
 
-.container {
-    /* position: relative; */
+.contact-box {
+    width: 80%;
+    min-height: 80vh;
+    margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 100%;
-    /* height: 400px; */
 }
 
-.contact-box {
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    max-width: 50%;
-    margin: 40px 0;
-    border-radius: 3px;
+.contact-box h2 {
+    margin: 5rem auto;
 }
 
 .form {
-    /* padding: 25px 40px; */
-    color: var(--text-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
-
-.form h3 {
-    position: relative;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-    font-size: 32px;
-    font-weight: 300;
-}
-
-/* .form h2::after {
-    content: '';
-    position: absolute;
-    left: 15%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color: var(--accent);
-} */
 
 .field {
-    width: 100%;
+    width: 60%;
     padding: 0.7rem 1rem;
     outline: none;
     border: 2px solid rgb(0, 0, 0);
     background-color: rgb(108, 109, 109);
     color: var(--text-color);
-    font-size: 18px;
-    margin-bottom: 22px;
+    font-size: 22px;
     transition: 0.3;
     border-radius: 5px;
 }
 
-.field::placeholder{
+.field::placeholder {
     color: var(--text-color);
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .message {
     resize: none;
 }
 
-.btn-send-email {
-    font-weight: 300;
-    font-size: 20px;
-    color: var(--text-color);
-    margin-left: auto;
-    position: relative;
+.btn-send a {
+    text-decoration: none;
 }
 
 /* FOOTER */
@@ -423,11 +358,6 @@ a, figcaption {
         line-height: 1.6;
     }
 
-    .btn,
-    .btn-secondary {
-        font-size: 20px;
-    }
-
     .header {
         display: none;
     }
@@ -444,8 +374,12 @@ a, figcaption {
         padding: 2rem 0;
     }
 
-    .projects {
+    .projects, .contact-box {
         padding-bottom: 4rem;
+    }
+
+    .contact-box {
+        min-height: 40vh;
     }
 
     .flex-container {
@@ -453,20 +387,12 @@ a, figcaption {
         gap: 5rem;
     }
 
-    /* .projects {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        padding-bottom: 4rem;
+    .field {
+        width: 100%;
     }
 
-    .grid-container {
-        gap: 1rem 1rem;
-        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    .field, .field::placeholder {
+        font-size: 18px;
     }
 
-    .projects h2 {
-        padding: 2rem 0 0 0;
-    } */
 }
