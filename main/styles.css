@@ -153,19 +153,16 @@ a, figcaption {
     color: var(--accent);
 }
 
-.about-info img {
-    max-width: 20px;
-}
-
 .about-img img {
-    max-width: 200px;
+    max-width: 300px;
 }
 
 /* PROJECTS */
 
 .projects {
     width: 80%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    padding-bottom: 10rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -188,13 +185,26 @@ a, figcaption {
 
 .flex-container {
     display: flex;
-    gap: 3rem;
+    column-count: 2;
+    row-gap: 8rem;
+    column-gap: 4rem;
     flex-wrap: wrap;
 }
 
 .flex-container > * {
     flex: 1;
     min-width: 40%;
+}
+
+.project-card p a i strong {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-card p a i strong:hover {
+    color: var(--accent);
 }
 
 .btn-github {
@@ -393,6 +403,10 @@ a, figcaption {
 
     .field, .field::placeholder {
         font-size: 18px;
+    }
+
+    .footer {
+        display: none;
     }
 
 }
