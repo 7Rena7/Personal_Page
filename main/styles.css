@@ -39,11 +39,16 @@ a {
 } */
 
 h2 {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 300;
 }
 
 h3 {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+h4 {
     font-size: 24px;
     font-weight: 300;
 }
@@ -59,6 +64,7 @@ a, figcaption {
 
 .btn, .btn-secondary {
     padding: 0.6rem 2rem;
+    margin-right: 1rem;
     font-size: 20px;
     background-color: var(--accent);
     border: none;
@@ -67,9 +73,28 @@ a, figcaption {
     transition: all 0.3s ease 0s;
 }
 
+.btn a {
+    text-decoration: none;
+}
+
 .btn:hover {
     background-color: var(--accent-hover); 
     box-shadow: 0 0 15px var(--accent-hover);
+}
+
+.btn-terciary {
+    padding: 0.5rem 0.8rem;
+    margin-right: 1rem;
+    font-size: 20px;
+    background-color: var(--background-dark);
+    border: 2px solid var(--accent);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-terciary:hover {
+    box-shadow: 0 0 20px var(--accent-hover);
 }
 
 /* .divider {
@@ -161,7 +186,6 @@ a, figcaption {
 
 .projects {
     width: 80%;
-    /* min-height: 100vh; */
     padding-bottom: 10rem;
     margin: 0 auto;
     display: flex;
@@ -207,70 +231,46 @@ a, figcaption {
     color: var(--accent);
 }
 
-.btn-github {
-    padding: 0.5rem 0.8rem;
-    font-size: 20px;
-    background-color: var(--background-dark);
-    border: 2px solid var(--accent);
-    margin-left: 1rem;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
+/* STACK */
 
-.btn-github:hover {
-    box-shadow: 0 0 20px var(--accent-hover);
-}
-
-/* CONTACT */
-
-.contact-box {
-    width: 80%;
-    min-height: 80vh;
-    margin: 0 auto;
+.stack {
     display: flex;
-    flex-direction: column;
-    justify-content: left;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 60vh;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.contact-box h2 {
+.stack h2 {
     margin: 5rem auto;
 }
 
-.form {
-    width: 100%;
+.tech-card {
+    background-color: var(--background-light);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.5rem 3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+    gap: 5rem;
+}
+
+.tech-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
 }
 
-.field {
-    width: 60%;
-    padding: 0.7rem 1rem;
-    outline: none;
-    border: 2px solid rgb(0, 0, 0);
-    background-color: rgb(108, 109, 109);
-    color: var(--text-color);
-    font-size: 22px;
-    transition: 0.3;
-    border-radius: 5px;
+.tech-item > img {
+    width: 5.5rem;
 }
 
-.field::placeholder {
-    color: var(--text-color);
-    font-size: 20px;
-}
-
-.message {
-    resize: none;
-}
-
-.btn-send a {
-    text-decoration: none;
+.tech-item figcaption {
+    color: var(--text-color-dark);
+    padding-top: 1rem;
 }
 
 /* FOOTER */
@@ -370,7 +370,7 @@ a, figcaption {
 
 @media (max-width: 1150px) {
     h2 {
-        font-size: 26px;
+        font-size: 28px;
         font-weight: 300;
     }
 
@@ -382,6 +382,10 @@ a, figcaption {
     p {
         font-size: 20px;
         line-height: 1.6;
+    }
+
+    .btn, .btn-secondary {
+        margin-bottom: 1rem;
     }
 
     .header {
@@ -400,6 +404,10 @@ a, figcaption {
         padding: 2rem 0;
     }
 
+    #linkedIn-about {
+        margin-left: 30%;
+    }
+
     .projects, .contact-box {
         padding-bottom: 4rem;
     }
@@ -413,12 +421,9 @@ a, figcaption {
         gap: 5rem;
     }
 
-    .field {
-        width: 100%;
-    }
-
-    .field, .field::placeholder {
-        font-size: 18px;
+    .tech-card {
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .footer {

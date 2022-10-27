@@ -20,7 +20,6 @@
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#about">about</a></li>
                     <li class="nav-item"><a href="#projects">projects</a></li>
-                    <li class="nav-item"><a href="#contact">contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -29,17 +28,19 @@
             <!-- About Section -->
             <section class="about section-odd" id="about">
                 <div class="about-img">
-                    <img src="./img/profilePhotoRounded.png" alt="Profile photo">
+                    <img src="./img/profilePhotoRounded.png" alt="Profile photo" loading="lazy">
                 </div>
                 <div class="about-info">
                     <h2>Hi, i'm <strong>Renato</strong>!</h2> <br>
                     <p>I'm a <strong>software developer</strong> from <span title="Uruguay">&#x1F1FA;&#x1F1FE;</span>, based in <span title="Argentina">&#x1F1E6;&#x1F1F7;</span>.</p> <br>
-                    <p>Currently working as a <i>Tech Implementation Analyst</i> at <a href="https://onetree.com/" target="_blank">Onetree</a> and finishing my last year at <a href="https://www.frcu.utn.edu.ar/" target="_blank">university</a> as a <i>Systems Analyst</i>. </p> <br>
+                    <p>Currently working as a <i>Tech Implementation Analyst</i> at <a href="https://onetree.com/" target="_blank">Onetree</a> and finishing my last year at university</a> as a <i>Systems Analyst</i>. </p> <br>
                     <p>You can read more about my education and experience on my <a href="https://www.linkedin.com/in/renato-corbellini-99155a175/" target="_blank">LinkedIn profile</a>, or download my CV from the button below.
                     </p> <br> <br>
-                    <!-- <a href="./files/renatoCorbelliniCVENG.pdf" download="Renato Corbellini CV" class="btn">download cv  <i class="fa fa-light fa-download"></i></a> -->
                     <button class="btn">
-                        <a href="./files/renatoCorbelliniCVENG.pdf" download="Renato Corbellini CV" ></a> download cv  <i class="fa fa-light fa-download"></i>
+                        <a href="./files/renatoCorbelliniCVENG.pdf" download="Renato Corbellini CV" >download cv <i class="fa fa-light fa-download"></i></a>
+                    </button>
+                    <button class="btn-terciary" id="linkedIn-about">
+                        <a href="https://www.linkedin.com/in/renato-corbellini-99155a175/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </button>
                 </div>
             </section>
@@ -58,63 +59,48 @@
                                 <a href="#" target="_blank"></a>visit site  <i
                                     class="fa fa-light fa fa-link"></i>
                             </button>
-                            <button class="btn-github">
-                                <a href="#" target="_blank"></a><i class="fab fa-github"></i>
-                            </button>
-                        </div>
-                        <div class="project-card">
-                            <h3>Project 2 name</h3> <br>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatem nihil dicta veritatis dolorum harum
-                            repudiandae id quod voluptates repellat. Iste laudantium corporis error animi nemo dolorem distinctio libero
-                            ipsam!</p> <br>
-                            <button class="btn btn-secondary">
-                                <a href="#" target="_blank"></a>visit site <i class="fa fa-light fa fa-link"></i>
-                            </button>
-                            <button class="btn-github">
-                                <a href="#" target="_blank"></a><i class="fab fa-github"></i>
-                            </button>
-                        </div>
-                        <div class="project-card">
-                            <h3>Project 3 name</h3> <br>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatem nihil dicta veritatis dolorum harum
-                            repudiandae id quod voluptates repellat. Iste laudantium corporis error animi nemo dolorem distinctio libero
-                            ipsam!</p> <br>
-                            <button class="btn btn-secondary">
-                                <a href="#" target="_blank"></a>visit site <i class="fa fa-light fa fa-link"></i>
-                            </button>
-                            <button class="btn-github">
-                                <a href="#" target="_blank"></a><i class="fab fa-github"></i>
-                            </button>
-                        </div>
-                        <div class="project-card">
-                            <h3>Project 4 name</h3> <br>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatem nihil dicta veritatis dolorum harum
-                            repudiandae id quod voluptates repellat. Iste laudantium corporis error animi nemo dolorem distinctio libero
-                            ipsam!</p> <br>
-                            <button class="btn btn-secondary">
-                                <a href="#" target="_blank"></a>visit site <i class="fa fa-light fa fa-link"></i>
-                            </button>
-                            <button class="btn-github">
+                            <button class="btn-terciary">
                                 <a href="#" target="_blank"></a><i class="fab fa-github"></i>
                             </button>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Contact -->
-            <section class="contact section-odd" id="contact">
-                <div class="contact-box">
-                    <h2>Let's connect!</h2>
-                    <div class="form">
-                        <input type="text" class="field" placeholder="Name" required>
-                        <input type="email" class="field" placeholder="E-mail" required>
-                        <textarea type="text" class="field message" placeholder="Message" rows="7" required></textarea>
-                        <button class="btn btn-send">
-                            <a href="#">send  </a><i class="fa-solid fa-paper-plane"></i>
-                        </button>
-                        <!-- <input type="submit" class="btn" value="send"> <i class="fab fa-github"></i> -->
+            <!-- My Stack -->
+            <section class="section-odd" id="stack">
+                <div class="stack">
+                    <h2>My Stack</h2>
+                    <h4>Known Technologies</h4>
+                    <div class="tech-card">
+                        <figure class="tech-item">
+                            <img src="./img/html-logo.png" loading="lazy">
+                            <figcaption>HTML 5</figcaption>
+                        </figure>
+                        <figure class="tech-item">
+                            <img src="./img/css-logo.png" loading="lazy">
+                            <figcaption>CSS 3</figcaption>
+                        </figure>
+                        <figure class="tech-item">
+                            <img src="./img/javascript-logo.png" loading="lazy">
+                            <figcaption>JavaScript</figcaption>
+                        </figure>
+                        <figure class="tech-item">
+                            <img src="./img/sql-logo.png" loading="lazy">
+                            <figcaption>SQL</figcaption>
+                        </figure>
+                        <figure class="tech-item">
+                            <img src="./img/git-logo.png" loading="lazy">
+                            <figcaption>GIT</figcaption>
+                        </figure>
                     </div>
-                </div>
+                    <h4>Learning</h4>
+                    <div class="tech-card">
+                        <figure class="tech-item">
+                            <img src="./img/react-logo.png" loading="lazy">
+                            <figcaption>React</figcaption>
+                        </figure>
+                    </div>
+                </div> 
             </section>
         </main>
         <!-- Footer -->
@@ -126,15 +112,16 @@
                         <ul>
                             <li><a href="#about">about</a></li>
                             <li><a href="#projects">projects</a></li>
-                            <li><a href="#contact">contact</a></li>
                         </ul>
                     </div>
                     <div class="footer__col">
                         <h4>Social media</h4>
-                        <ul class="social-links">
-                            <a href="https://www.linkedin.com/in/renato-corbellini-99155a175/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/7Rena7" target="_blank"><i class="fab fa-github"></i></a>
-                        </ul>
+                        <button class="btn-terciary">
+                            <a href="https://www.linkedin.com/in/renato-corbellini-99155a175/" target="_blank"></a><i class="fab fa-linkedin-in"></i>
+                        </button>
+                        <button class="btn-terciary">
+                            <a href="https://github.com/7Rena7" target="_blank"></a><i class="fab fa-github"></i>
+                        </button>
                     </div>
                 </div>
             </div>
