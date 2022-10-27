@@ -266,6 +266,8 @@ a, figcaption {
 
 .tech-item > img {
     width: 5.5rem;
+    height: 5.5rem;
+    object-fit: fill;
 }
 
 .tech-item figcaption {
