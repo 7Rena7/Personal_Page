@@ -1,137 +1,220 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Renato Corbellini · Software Developer</title>
-        <meta name="Renato Corbellini" content="Javascript Algorithms CSS HTML Personal Projects">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./main/styles.css">
-        <link rel="icon" href="./img/profilePhotoRounded.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <!-- Navigation Bar -->
-        <header class="header">
-            <div class="logo-container">
-                <p class="logo-caption"><strong>renato</strong>corbellini</p>
-            </div>
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#about">about</a></li>
-                    <li class="nav-item"><a href="#projects">projects</a></li>
-                    <li class="nav-item"><a href="#stack">stack</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Main Section -->
-        <main class="main">
-            <!-- About Section -->
-            <section class="about section-odd" id="about">
-                <div class="about-img">
-                    <img src="./img/profilePhotoRounded.png" alt="Profile photo" loading="lazy">
-                </div>
-                <div class="about-info">
-                    <h2>Hi, i'm <strong>Renato</strong>!</h2> <br>
-                    <p>I'm a <strong>software developer</strong> from <span title="Uruguay">&#x1F1FA;&#x1F1FE;</span>, based in <span title="Argentina">&#x1F1E6;&#x1F1F7;</span>.</p> <br>
-                    <p>Currently working as a <i>Tech Implementation Analyst</i> at <a href="https://onetree.com/" target="_blank">Onetree</a> and finishing my last year at university</a> as a <i>Systems Analyst</i>. </p> <br>
-                    <p>You can read more about my education and experience on my <a href="https://www.linkedin.com/in/renato-corbellini-99155a175/" target="_blank">LinkedIn profile</a>, or download my CV from the button below.
-                    </p> <br> <br>
-                    <button class="btn" aria-label="Download curriculum vitae">
-                        <a href="./files/renatoCorbelliniCVENG.pdf" download="Renato Corbellini CV" >download cv <i class="fa fa-light fa-download"></i></a>
-                    </button>
-                    <button class="btn-terciary" id="linkedIn-about" aria-label="Visit LinkedIn profile">
-                        <a href="https://www.linkedin.com/in/renato-corbellini-99155a175/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </button>
-                </div>
-            </section>
-            <!-- Projects Section -->
-            <section class="section-even" id="projects">
-                <div class="projects">
-                    <h2>Projects</h2>
-                    <div class="flex-container">
-                        <div class="project-card">
-                            <h3><i>FreeCodeCamp</i> JavaScript Challenges</h3> <br>
-                            <p>My solutions to the challenges presented in the final section of the <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank"><i><strong>JavaScript Algorithms and Data Structures Course</strong></i></a>. </p> <br>
-                                <p>Some of this challenges include a <strong>Roman Numeral Converter</strong>, <strong>Caesars Cipher</strong>
-                                and a
-                                <strong>US Telephone Number Validator</strong>.</p> <br>
-                            <button class="btn btn-secondary" aria-label="Visit Free Code Camp solution site">
-                                <a href="#" target="_blank"></a>visit site  <i
-                                    class="fa fa-light fa fa-link"></i>
-                            </button>
-                            <button class="btn-terciary" aria-label="Visit Github project repository">
-                                <a href="#" target="_blank"></a><i class="fab fa-github"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- My Stack -->
-            <section class="section-odd" id="stack">
-                <div class="stack">
-                    <h2>My Stack</h2>
-                    <h4>Known Technologies</h4>
-                    <div class="tech-card">
-                        <figure class="tech-item">
-                            <img src="./img/html-logo.png" alt="HTML logo" loading="lazy">
-                            <figcaption>HTML 5</figcaption>
-                        </figure>
-                        <figure class="tech-item">
-                            <img src="./img/css-logo.png" alt="CSS logo" loading="lazy">
-                            <figcaption>CSS 3</figcaption>
-                        </figure>
-                        <figure class="tech-item">
-                            <img src="./img/javascript-logo.png" alt="JavaScript logo" loading="lazy">
-                            <figcaption>JavaScript</figcaption>
-                        </figure>
-                        <figure class="tech-item">
-                            <img src="./img/sql-logo.png" alt="SQL logo" loading="lazy">
-                            <figcaption>SQL</figcaption>
-                        </figure>
-                        <figure class="tech-item">
-                            <img src="./img/git-logo.png" alt="Git logo" loading="lazy">
-                            <figcaption>GIT</figcaption>
-                        </figure>
-                    </div>
-                    <h4>Learning</h4>
-                    <div class="tech-card">
-                        <figure class="tech-item">
-                            <img src="./img/react-logo.png" alt="React logo" loading="lazy">
-                            <figcaption>React</figcaption>
-                        </figure>
-                    </div>
-                </div> 
-            </section>
-        </main>
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer__container">
-                <div class="footer__row">
-                    <div class="footer__col">
-                        <h4>Sections</h4>
-                        <ul>
-                            <li><a href="#about">about</a></li>
-                            <li><a href="#projects">projects</a></li>
-                            <li><a href="#stack">stack</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__col">
-                        <h4>Social media</h4>
-                        <button class="btn-terciary" aria-label="Visit LinkedIn profile">
-                            <a href="https://www.linkedin.com/in/renato-corbellini-99155a175/" target="_blank"></a><i class="fab fa-linkedin-in"></i>
-                        </button>
-                        <button class="btn-terciary" aria-label="Visit Github profile">
-                            <a href="https://github.com/7Rena7" target="_blank"></a><i class="fab fa-github"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <div class="credits">
-            <p>Developed with HTML, CSS and Javascript vanilla</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Renato Corbellini · Software Developer</title>
+    <meta
+      name="Renato Corbellini"
+      content="Javascript Algorithms CSS HTML Personal Projects"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./main/styles.css" />
+    <link rel="icon" href="./img/profilePhotoRounded.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="header">
+      <div class="logo-container">
+        <p class="logo-caption"><strong>renato</strong>corbellini</p>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about">about</a></li>
+          <li class="nav-item"><a href="#projects">projects</a></li>
+          <li class="nav-item"><a href="#stack">stack</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main Section -->
+    <main class="main">
+      <!-- About Section -->
+      <section class="about section-odd" id="about">
+        <div class="about-img">
+          <img
+            src="./img/profilePhotoRounded.png"
+            alt="Profile photo"
+            loading="lazy"
+          />
         </div>
-        
-        <script type="module" src="./main/index.js" async defer></script>
-    </body>
+        <div class="about-info">
+          <h2>Hi, i'm <strong>Renato</strong>!</h2>
+          <br />
+          <p>
+            <strong>Software developer</strong> from
+            <span title="Uruguay">&#x1F1FA;&#x1F1FE;</span>, based in
+            <span title="Argentina">&#x1F1E6;&#x1F1F7;</span>.
+          </p>
+          <br />
+          <p>
+            Currently working as a <i>Tech Implementation Analyst</i> at
+            <a href="https://onetree.com/" target="_blank">Onetree</a> while
+            finishing my last year at university as a <i>Systems Analyst</i>.
+          </p>
+          <br />
+          <p>
+            You can read more about my education and experience on my
+            <a
+              href="https://www.linkedin.com/in/renato-corbellini-99155a175/"
+              target="_blank"
+              >LinkedIn profile</a
+            >, or download my CV from the button below.
+          </p>
+          <br />
+          <br />
+          <button class="btn" aria-label="Download curriculum vitae">
+            <a
+              href="./files/renatoCorbelliniCVENG.pdf"
+              download="Renato Corbellini CV"
+              >download cv <i class="fa fa-light fa-download"></i
+            ></a>
+          </button>
+          <button
+            class="btn-terciary"
+            id="linkedIn-about"
+            aria-label="Visit LinkedIn profile"
+          >
+            <a
+              href="https://www.linkedin.com/in/renato-corbellini-99155a175/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </button>
+        </div>
+      </section>
+      <!-- Projects Section -->
+      <section class="section-even" id="projects">
+        <div class="projects">
+          <h2>Projects</h2>
+          <div class="flex-container">
+            <div class="project-card">
+              <h3><i>FreeCodeCamp</i> JavaScript Challenges</h3>
+              <br />
+              <p>
+                My solutions to the challenges presented in the final section of
+                the
+                <a
+                  href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
+                  target="_blank"
+                  ><i
+                    ><strong
+                      >JavaScript Algorithms and Data Structures Course</strong
+                    ></i
+                  ></a
+                >.
+              </p>
+              <br />
+              <p>
+                Some of this challenges include a
+                <strong>Roman Numeral Converter</strong>,
+                <strong>Caesars Cipher</strong>
+                and a
+                <strong>US Telephone Number Validator</strong>.
+              </p>
+              <br />
+              <button
+                class="btn btn-secondary"
+                aria-label="Visit Free Code Camp solution site"
+              >
+                <a href="https://fcc-challenges.vercel.app/" target="_blank"
+                  >visit site <i class="fa fa-light fa fa-link"></i
+                ></a>
+              </button>
+              <button
+                class="btn-terciary"
+                aria-label="Visit Github project repository"
+              >
+                <a
+                  href="https://github.com/7Rena7/fcc-challenges"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- My Stack -->
+      <section class="section-odd" id="stack">
+        <div class="stack">
+          <h2>My Stack</h2>
+          <h4>Known Technologies</h4>
+          <div class="tech-card">
+            <figure class="tech-item">
+              <img src="./img/html-logo.png" alt="HTML logo" loading="lazy" />
+              <figcaption>HTML 5</figcaption>
+            </figure>
+            <figure class="tech-item">
+              <img src="./img/css-logo.png" alt="CSS logo" loading="lazy" />
+              <figcaption>CSS 3</figcaption>
+            </figure>
+            <figure class="tech-item">
+              <img
+                src="./img/javascript-logo.png"
+                alt="JavaScript logo"
+                loading="lazy"
+              />
+              <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure class="tech-item">
+              <img src="./img/sql-logo.png" alt="SQL logo" loading="lazy" />
+              <figcaption>SQL</figcaption>
+            </figure>
+            <figure class="tech-item">
+              <img src="./img/git-logo.png" alt="Git logo" loading="lazy" />
+              <figcaption>GIT</figcaption>
+            </figure>
+          </div>
+          <h4>Learning</h4>
+          <div class="tech-card">
+            <figure class="tech-item">
+              <img src="./img/react-logo.png" alt="React logo" loading="lazy" />
+              <figcaption>React</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__row">
+          <div class="footer__col">
+            <h4>Sections</h4>
+            <ul>
+              <li><a href="#about">about</a></li>
+              <li><a href="#projects">projects</a></li>
+              <li><a href="#stack">stack</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Social media</h4>
+            <button class="btn-terciary" aria-label="Visit LinkedIn profile">
+              <a
+                href="https://www.linkedin.com/in/renato-corbellini-99155a175/"
+                target="_blank"
+              ></a
+              ><i class="fab fa-linkedin-in"></i>
+            </button>
+            <button class="btn-terciary" aria-label="Visit Github profile">
+              <a href="https://github.com/7Rena7" target="_blank"></a
+              ><i class="fab fa-github"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="credits">
+      <p>Developed with HTML, CSS and Javascript vanilla</p>
+    </div>
+
+    <script type="module" src="./main/index.js" async defer></script>
+  </body>
 </html>
