@@ -28,11 +28,13 @@
       <nav>
         <ul class="nav-list">
           <li class="nav-item"><a href="#about">about</a></li>
+          <li class="nav-item"><a href="#experience">experience</a></li>
           <li class="nav-item"><a href="#projects">projects</a></li>
           <li class="nav-item"><a href="#stack">stack</a></li>
         </ul>
       </nav>
     </header>
+
     <!-- Main Section -->
     <main class="main">
       <!-- About Section -->
@@ -45,7 +47,61 @@
           />
         </div>
         <div class="about-info">
-          <h2>Hi, i'm <strong>Renato</strong>!</h2>
+          <h2>Hi, I'm <strong>Renato</strong>! 👋</h2>
+          <br />
+          <p>
+            <strong>Software developer</strong> from
+            <span title="Uruguay">&#x1F1FA;&#x1F1FE;</span>, based in
+            <span title="Argentina">&#x1F1E6;&#x1F1F7;</span>. Currently working
+            as a <i>Fullstack Developer</i> at
+            <a href="https://onetree.com/" target="_blank">Onetree</a> while
+            studying <i>Systems Engineering</i> in
+            <a href="https://www.frcu.utn.edu.ar/" target="_blank">UTN FRCU</a>.
+          </p>
+          <br />
+          <p>
+            You can learn more about me on my
+            <a
+              href="https://www.linkedin.com/in/renato-corbellini-99155a175/"
+              target="_blank"
+              >LinkedIn profile</a
+            >
+            or download my Resume from the button below.
+          </p>
+          <br />
+          <br />
+          <a
+            class="btn"
+            aria-label="Download curriculum vitae"
+            href="./files/renatoCorbelliniCVENG.pdf"
+            download="Renato Corbellini CV"
+            id="downloadCVbtn"
+          >
+            download cv <i class="fa fa-light fa-download"></i>
+          </a>
+          <a
+            class="btn-terciary"
+            id="linkedIn-about"
+            aria-label="Visit LinkedIn profile"
+            href="https://www.linkedin.com/in/renato-corbellini-99155a175/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <!-- <section class="about section-odd" id="about">
+        <div class="about-img">
+          <img
+            src="./img/profilePhotoRounded.png"
+            alt="Profile photo"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-info">
+          <h2>Hi, i'm <strong>Renato</strong>! 👋</h2>
           <br />
           <p>
             <strong>Software developer</strong> from
@@ -54,9 +110,10 @@
           </p>
           <br />
           <p>
-            Currently working as a <i>Tech Implementation Analyst</i> at
+            Currently working as a <i>Fullstack Developer</i> at
             <a href="https://onetree.com/" target="_blank">Onetree</a> while
-            finishing my last year at university as a <i>Systems Analyst</i>.
+            continuing my studies in <i>Systems Engineering</i> in
+            <a href="https://www.frcu.utn.edu.ar/" target="_blank">UTN FRCU</a>.
           </p>
           <br />
           <p>
@@ -69,31 +126,65 @@
           </p>
           <br />
           <br />
-          <button class="btn" aria-label="Download curriculum vitae">
-            <a
-              href="./files/renatoCorbelliniCVENG.pdf"
-              download="Renato Corbellini CV"
-              >download cv <i class="fa fa-light fa-download"></i
-            ></a>
-          </button>
-          <button
+          <a
+            class="btn"
+            aria-label="Download curriculum vitae"
+            href="./files/renatoCorbelliniCVENG.pdf"
+            download="Renato Corbellini CV"
+          >
+            download cv <i class="fa fa-light fa-download"></i>
+          </a>
+          <a
             class="btn-terciary"
             id="linkedIn-about"
             aria-label="Visit LinkedIn profile"
+            href="https://www.linkedin.com/in/renato-corbellini-99155a175/"
+            target="_blank"
           >
-            <a
-              href="https://www.linkedin.com/in/renato-corbellini-99155a175/"
-              target="_blank"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </button>
+            <i class="fab fa-linkedin-in"></i>
+          </a>
         </div>
-      </section>
+      </section> -->
+
       <!-- Projects Section -->
       <section class="section-even" id="projects">
         <div class="projects">
           <h2>Projects</h2>
           <div class="flex-container">
+            <div class="project-card">
+              <h3>Sofya Store</h3>
+              <br />
+              <p>
+                <i><strong>Sofya </strong></i> is an online store designed to
+                <i><strong>widen</strong></i> women's shopping experience,
+                presented in a visually appealing website, seamless
+                functionality and strong security measures.
+                <br />
+                <br />
+                With its powerful combination of
+                <strong>Angular, Firebase, OAuth2 and Bootstrap</strong>, Sofya
+                ensures an engaging and trustworthy platform for customers to
+                explore and purchase fashionable outfits. <br />
+                <br />
+              </p>
+              <br />
+              <a
+                class="btn btn-secondary"
+                aria-label="Visit Free Code Camp solution site"
+                href="https://sofya-store.vercel.app/home"
+                target="_blank"
+              >
+                visit site <i class="fa fa-light fa fa-link"></i>
+              </a>
+              <a
+                class="btn-terciary"
+                aria-label="Visit Github project repository"
+                href="https://github.com/7Rena7/sofya-store"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
             <div class="project-card">
               <h3><i>FreeCodeCamp</i> JavaScript Challenges</h3>
               <br />
@@ -119,41 +210,52 @@
                 <strong>US Telephone Number Validator</strong>.
               </p>
               <br />
-              <button
+              <a
                 class="btn btn-secondary"
                 aria-label="Visit Free Code Camp solution site"
+                href="https://fcc-challenges.vercel.app/"
+                target="_blank"
               >
-                <a href="https://fcc-challenges.vercel.app/" target="_blank"
-                  >visit site <i class="fa fa-light fa fa-link"></i
-                ></a>
-              </button>
-              <button
+                visit site <i class="fa fa-light fa fa-link"></i>
+              </a>
+              <a
                 class="btn-terciary"
                 aria-label="Visit Github project repository"
+                href="https://github.com/7Rena7/fcc-challenges"
+                target="_blank"
               >
-                <a
-                  href="https://github.com/7Rena7/fcc-challenges"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </button>
+                <i class="fab fa-github"></i>
+              </a>
             </div>
           </div>
         </div>
       </section>
+
       <!-- My Stack -->
       <section class="section-odd" id="stack">
         <div class="stack">
           <h2>My Stack</h2>
-          <h4>Known Technologies</h4>
-          <div class="tech-card">
+          <div class="stack-card">
             <figure class="tech-item">
-              <img src="./img/html-logo.png" alt="HTML logo" loading="lazy" />
+              <img
+                src="./img/html-logo.png"
+                alt="HTML logo"
+                loading="lazy"
+                #html-img
+              />
               <figcaption>HTML 5</figcaption>
             </figure>
             <figure class="tech-item">
               <img src="./img/css-logo.png" alt="CSS logo" loading="lazy" />
               <figcaption>CSS 3</figcaption>
+            </figure>
+            <figure class="tech-item">
+              <img
+                src="./img/typescript.png"
+                alt="JavaScript logo"
+                loading="lazy"
+              />
+              <figcaption>TypeScript</figcaption>
             </figure>
             <figure class="tech-item">
               <img
@@ -164,24 +266,45 @@
               <figcaption>JavaScript</figcaption>
             </figure>
             <figure class="tech-item">
-              <img src="./img/sql-logo.png" alt="SQL logo" loading="lazy" />
-              <figcaption>SQL</figcaption>
+              <img src="./img/node.png" alt="JavaScript logo" loading="lazy" />
+              <figcaption>Node</figcaption>
+            </figure>
+            <figure class="tech-item">
+              <img
+                src="./img/mongodb.png"
+                alt="JavaScript logo"
+                loading="lazy"
+              />
+              <figcaption>MongoDB</figcaption>
+            </figure>
+            <figure class="tech-item">
+              <img src="./img/sql.png" alt="SQL logo" loading="lazy" />
+              <figcaption>PostgreSQL</figcaption>
             </figure>
             <figure class="tech-item">
               <img src="./img/git-logo.png" alt="Git logo" loading="lazy" />
               <figcaption>GIT</figcaption>
             </figure>
-          </div>
-          <h4>Learning</h4>
-          <div class="tech-card">
             <figure class="tech-item">
-              <img src="./img/react-logo.png" alt="React logo" loading="lazy" />
-              <figcaption>React</figcaption>
+              <img src="./img/github.png" alt="Git logo" loading="lazy" />
+              <figcaption>GitHub</figcaption>
+            </figure>
+          </div>
+          <h4>Currently learning</h4>
+          <div class="learning-card">
+            <figure class="tech-item">
+              <img src="./img/aws.png" alt="AWS logo" loading="lazy" />
+              <figcaption>AWS</figcaption>
+            </figure>
+            <figure class="tech-item">
+              <img src="./img/python.avif" alt="AWS logo" loading="lazy" />
+              <figcaption>Python</figcaption>
             </figure>
           </div>
         </div>
       </section>
     </main>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="footer__container">
@@ -196,23 +319,29 @@
           </div>
           <div class="footer__col">
             <h4>Social media</h4>
-            <button class="btn-terciary" aria-label="Visit LinkedIn profile">
-              <a
-                href="https://www.linkedin.com/in/renato-corbellini-99155a175/"
-                target="_blank"
-              ></a
-              ><i class="fab fa-linkedin-in"></i>
-            </button>
-            <button class="btn-terciary" aria-label="Visit Github profile">
-              <a href="https://github.com/7Rena7" target="_blank"></a
-              ><i class="fab fa-github"></i>
-            </button>
+            <a
+              class="btn-terciary"
+              id="linkedIn-about"
+              aria-label="Visit LinkedIn profile"
+              href="https://www.linkedin.com/in/renato-corbellini-99155a175/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              class="btn-terciary"
+              aria-label="Visit Github profile"
+              href="https://github.com/7Rena7"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
           </div>
         </div>
       </div>
     </footer>
     <div class="credits">
-      <p>Developed with HTML, CSS and Javascript vanilla</p>
+      <p>Developed with HTML, CSS and vanilla Javascript</p>
     </div>
 
     <script type="module" src="./main/index.js" async defer></script>
