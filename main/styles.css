@@ -53,12 +53,12 @@ h4 {
   font-weight: 300;
 }
 
-p {
+p,
+li {
   font-size: 20px;
   line-height: 1.6;
 }
 
-a,
 figcaption {
   font-size: 22px;
 }
@@ -168,7 +168,7 @@ figcaption {
 }
 
 .about-info p {
-  max-width: 500px;
+  max-width: 550px;
 }
 
 .about-info p a {
@@ -200,10 +200,11 @@ figcaption {
 }
 
 .projects h2,
-.flex-container h3,
-.flex-container h3 i,
-.flex-container p,
-.flex-container p strong {
+.projects .row h3,
+.projects .row h3 strong,
+.projects .row h3 i,
+.projects .row p,
+.projects .row p strong {
   color: var(--text-color-dark);
 }
 
@@ -212,17 +213,27 @@ figcaption {
 }
 
 .project-card p {
-  max-width: 100%;
+  max-width: 95%;
 }
 
-.flex-container {
+.projects .row {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.projects .row > * {
+  min-width: 40%;
+}
+
+.projects .row .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
   row-gap: 7rem;
   column-gap: 4rem;
-}
-
-.flex-container > * {
-  min-width: 40%;
 }
 
 .project-card p a i strong {
@@ -238,6 +249,89 @@ figcaption {
 
 .project-card button a {
   width: 100%;
+}
+
+.projects > *:last-child {
+  margin-top: 5rem;
+}
+
+/* EXPERIENCE */
+
+.experience {
+  width: 80%;
+  padding-bottom: 10rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.experience h2,
+.experience .row h3,
+.experience .row h3 strong,
+.experience .row h3 i,
+.experience .row p,
+.experience .row p strong {
+  color: var(--text-color);
+}
+
+.experience h2 {
+  margin: 3rem auto;
+}
+
+.experience-card p {
+  max-width: 95%;
+}
+
+.experience .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.experience .row > * {
+  min-width: 40%;
+}
+
+.experience .row .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  row-gap: 7rem;
+  column-gap: 4rem;
+}
+
+.experience-card h3 a,
+.experience-card p a i strong,
+.experience-card li a {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.experience-card h3 a:hover,
+.experience-card p a i strong:hover,
+.experience-card li a:hover {
+  color: var(--accent);
+}
+
+.experience-card button a {
+  width: 100%;
+}
+
+.experience .row .column .first-experience {
+  margin-bottom: 5rem;
+}
+
+.key-wins-list {
+  list-style: none;
+  margin: 0.5rem 0 2rem 2rem;
+  max-width: 80%;
 }
 
 /* STACK */
@@ -298,6 +392,21 @@ figcaption {
 
 #html-img {
   object-fit: fill;
+}
+
+.aws-img-caption {
+  text-align: center;
+}
+
+/* EXTRA */
+
+.divisor {
+  height: 2px;
+  background-color: var(--background-light);
+  margin: 10px auto;
+  margin-bottom: 30px;
+  width: 85vw;
+  box-shadow: 0px 0px 25px #888888, 3px 3px 8px #888888;
 }
 
 /* FOOTER */
@@ -449,12 +558,13 @@ figcaption {
     min-height: 40vh;
   }
 
-  .flex-container {
+  .row {
     flex-direction: column;
     gap: 5rem;
   }
 
-  .stack-card, .learning-card {
+  .stack-card,
+  .learning-card {
     grid-template-columns: auto;
     gap: 1rem;
   }

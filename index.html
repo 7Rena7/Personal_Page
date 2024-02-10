@@ -1,158 +1,286 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Renato Corbellini · Software Developer</title>
-    <meta
-      name="Renato Corbellini"
-      content="Javascript Algorithms CSS HTML Personal Projects"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./main/styles.css" />
-    <link rel="icon" href="./img/profilePhotoRounded.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <header class="header">
-      <div class="logo-container">
-        <p class="logo-caption"><strong>renato</strong>corbellini</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Renato Corbellini · Software Developer</title>
+  <meta name="Renato Corbellini" content="Javascript Algorithms CSS HTML Personal Projects" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./main/styles.css" />
+  <link rel="icon" href="./img/profilePhotoRounded.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="logo-container">
+      <p class="logo-caption"><strong>renato</strong>corbellini</p>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#about">about</a></li>
+        <li class="nav-item"><a href="#experience">experience</a></li>
+        <li class="nav-item"><a href="#projects">projects</a></li>
+        <li class="nav-item"><a href="#stack">stack</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main class="main">
+    <!-- About Section -->
+    <section class="about section-odd" id="about">
+      <div class="about-img">
+        <img src="./img/profilePhotoRounded.png" alt="Profile photo" loading="lazy" />
       </div>
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#about">about</a></li>
-          <li class="nav-item"><a href="#experience">experience</a></li>
-          <li class="nav-item"><a href="#projects">projects</a></li>
-          <li class="nav-item"><a href="#stack">stack</a></li>
-        </ul>
-      </nav>
-    </header>
+      <div class="about-info">
+        <h2>Hi, I'm <strong>Renato</strong>! 👋</h2>
+        <br />
+        <p>
+          <strong>Full Stack Developer</strong> from
+          <span title="Uruguay">&#x1F1FA;&#x1F1FE;</span> based in
+          <span title="Argentina">&#x1F1E6;&#x1F1F7;</span>. Currently working
+          as a <i>Full Stack Developer</i> at
+          DevSavant while
+          studying <i>Systems Engineering</i> in
+          <a href="https://www.frcu.utn.edu.ar/" target="_blank">UTN FRCU</a>.
+        </p>
+        <br />
+        <p>
+          You can learn more about me on my
+          <a href="https://www.linkedin.com/in/renato-corbellini-fullstack-developer" target="_blank">LinkedIn
+            profile</a>
+          or download my Resume from the button below.
+        </p>
+        <br />
+        <p>
+          I'm Passionate about embracing new challenges and continuously seeking opportunities for learning. I approach
+          problem-solving with a positive mindset, tackling issues with enthusiasm.
+        </p>
+        <br />
+        <p>
+          Outside of work, I enjoy staying active through sports, have a deep love for dogs, and appreciate traditional
+          Uruguayan culture, including the art of <a href="https://en.wikipedia.org/wiki/Asado" target="_blank">asados
+            🍖</a>, drinking <a href="https://en.wikipedia.org/wiki/Mate_(drink)" target="_blank">mate 🧉</a>, and
+          eating <a
+            href="https://en.wikipedia.org/wiki/Alfajor#:~:text=An%20alfajor%20or%20alaj%C3%BA%20(Spanish,flour%2C%20honey%2C%20and%20nuts"
+            target="_blank">alfajores</a>.
+        </p>
+        <br />
+        <br />
+        <a class="btn" aria-label="Download curriculum vitae" href="./files/CV Renato Corbellini 2024.pdf"
+          download="Renato Corbellini CV" id="downloadCVbtn">
+          download cv <i class="fa fa-light fa-download"></i>
+        </a>
+        <a class="btn-terciary" id="linkedIn-about" aria-label="Visit LinkedIn profile"
+          href="https://www.linkedin.com/in/renato-corbellini-fullstack-developer" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </section>
 
-    <!-- Main Section -->
-    <main class="main">
-      <!-- About Section -->
-      <section class="about section-odd" id="about">
-        <div class="about-img">
-          <img
-            src="./img/profilePhotoRounded.png"
-            alt="Profile photo"
-            loading="lazy"
-          />
-        </div>
-        <div class="about-info">
-          <h2>Hi, I'm <strong>Renato</strong>! 👋</h2>
-          <br />
-          <p>
-            <strong>Software developer</strong> from
-            <span title="Uruguay">&#x1F1FA;&#x1F1FE;</span>, based in
-            <span title="Argentina">&#x1F1E6;&#x1F1F7;</span>. Currently working
-            as a <i>Fullstack Developer</i> at
-            <a href="https://onetree.com/" target="_blank">Onetree</a> while
-            studying <i>Systems Engineering</i> in
-            <a href="https://www.frcu.utn.edu.ar/" target="_blank">UTN FRCU</a>.
-          </p>
-          <br />
-          <p>
-            You can learn more about me on my
-            <a
-              href="https://www.linkedin.com/in/renato-corbellini-99155a175/"
-              target="_blank"
-              >LinkedIn profile</a
-            >
-            or download my Resume from the button below.
-          </p>
-          <br />
-          <br />
-          <a
-            class="btn"
-            aria-label="Download curriculum vitae"
-            href="./files/renatoCorbelliniCVENG.pdf"
-            download="Renato Corbellini CV"
-            id="downloadCVbtn"
-          >
-            download cv <i class="fa fa-light fa-download"></i>
-          </a>
-          <a
-            class="btn-terciary"
-            id="linkedIn-about"
-            aria-label="Visit LinkedIn profile"
-            href="https://www.linkedin.com/in/renato-corbellini-99155a175/"
-            target="_blank"
-          >
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-      </section>
+    <hr class="divisor" />
 
-      <!-- Experience Section -->
-      <!-- <section class="about section-odd" id="about">
-        <div class="about-img">
-          <img
-            src="./img/profilePhotoRounded.png"
-            alt="Profile photo"
-            loading="lazy"
-          />
+    <!-- Experience Section -->
+    <section class="section-odd" id="experience">
+      <div class="experience">
+        <h2>Experience</h2>
+        <div class="row">
+          <div class="column">
+            <div class="experience-card first-experience">
+              <h3><strong>Full Stack Developer</strong> at <a href="https://devsavant.com/"
+                  target="_blank">DevSavant</a></h3>
+              <p>August 2023 - Present</p>
+              <br />
+              <h4>Key Wins</h4>
+              <div class="key-wins-list">
+                <ul>
+                  <li>
+                    Took charge of developing a POC to smoothly blend <a
+                      href="https://launchdarkly.com/blog/what-are-feature-flags/" target="_blank">Feature Flags</a>
+                    into both the project's frontend and
+                    backend using <a href="https://posthog.com/" target="_blank">PostHog</a> and <a
+                      href="https://launchdarkly.com/" target="_blank">LaunchDarkly</a>.
+                  </li>
+                  <li>
+                    Led the creation of detailed guidelines on building new project modules, finally addressing a
+                    five-year backlog.
+                  </li>
+                  <li>
+                    Designed and implemented a new module of the application that communicates seemlessly with two
+                    external APIs.
+                  </li>
+                  <li>
+                    Refactored an entire Angular application, achieving a <strong>20%</strong> reduction in code amount
+                    and enhancing
+                    performance by <strong>10%</strong>.
+                  </li>
+                </ul>
+              </div>
+              <h4>Role Responsabilities</h4>
+              <div class="key-wins-list">
+                <ul>
+                  <li>
+                    Create, maintain and test API endpoints with Python and PHP
+                  </li>
+                  <li>
+                    Add web user interaction through Angular components
+                  </li>
+                  <li>
+                    Create and maintain databases in MySQL with SQLAlchemy as the ORM
+                  </li>
+                  <li>
+                    Refactor legacy Angular applications, enhancing performance by 10%
+                  </li>
+                  <li>
+                    Implement Feature Flags from scratch using LaunchDarkly SDKs
+                  </li>
+                  <li>
+                    Employ JavaScript and jQuery for frontend development to maintain legacy apps
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="about-info">
-          <h2>Hi, i'm <strong>Renato</strong>! 👋</h2>
-          <br />
-          <p>
-            <strong>Software developer</strong> from
-            <span title="Uruguay">&#x1F1FA;&#x1F1FE;</span>, based in
-            <span title="Argentina">&#x1F1E6;&#x1F1F7;</span>.
-          </p>
-          <br />
-          <p>
-            Currently working as a <i>Fullstack Developer</i> at
-            <a href="https://onetree.com/" target="_blank">Onetree</a> while
-            continuing my studies in <i>Systems Engineering</i> in
-            <a href="https://www.frcu.utn.edu.ar/" target="_blank">UTN FRCU</a>.
-          </p>
-          <br />
-          <p>
-            You can read more about my education and experience on my
-            <a
-              href="https://www.linkedin.com/in/renato-corbellini-99155a175/"
-              target="_blank"
-              >LinkedIn profile</a
-            >, or download my CV from the button below.
-          </p>
-          <br />
-          <br />
-          <a
-            class="btn"
-            aria-label="Download curriculum vitae"
-            href="./files/renatoCorbelliniCVENG.pdf"
-            download="Renato Corbellini CV"
-          >
-            download cv <i class="fa fa-light fa-download"></i>
-          </a>
-          <a
-            class="btn-terciary"
-            id="linkedIn-about"
-            aria-label="Visit LinkedIn profile"
-            href="https://www.linkedin.com/in/renato-corbellini-99155a175/"
-            target="_blank"
-          >
-            <i class="fab fa-linkedin-in"></i>
-          </a>
+        <div class="row">
+          <div class="column">
+            <div class="experience-card">
+              <h3><strong>Full Stack Developer</strong> at <a href="https://onetree.com/" target="_blank">Onetree</a>
+              </h3>
+              <p>February 2023 - August 2023</p>
+              <br />
+              <h4>Key Wins</h4>
+              <div class="key-wins-list">
+                <ul>
+                  <li>
+                    Designed and implemented the entire API for new entities, establishing endpoints for data creation,
+                    editing, deletion, and retrieval, and successfully integrated the wrapper API in Node.js with the
+                    core API in .NET.
+                  </li>
+                  <li>
+                    Pioneered the implementation of API testing using <a href="https://postman.com/"
+                      target="_blank">Postman</a> integrated tools, resulting in a 10% reduction in QA time for tasks
+                    related to the API.
+                  </li>
+                  <li>
+                    Developed comprehensive documentation and step-by-step guides that reduced the onboarding time of
+                    new
+                    team members in 10%.
+                  </li>
+                </ul>
+              </div>
+              <h4>Role Responsabilities</h4>
+              <div class="key-wins-list">
+                <ul>
+                  <li>
+                    Backend for frontend (BFF) with Node.js.
+                  </li>
+                  <li>
+                    Create and maintain API endpoints in .NET and Node.js.
+                  </li>
+                  <li>
+                    Add web user interaction through Angular 12+ components.
+                  </li>
+                  <li>
+                    Persist and manage data using MySQL and Microsoft SQL Server.
+                  </li>
+                </ul>
+              </div>
+              <br />
+            </div>
+          </div>
+          <div class="column">
+            <div class="experience-card">
+              <h3><strong>Tech Implementation Analyst</strong> at <a href="https://onetree.com/"
+                  target="_blank">Onetree</a> </h3>
+              <p>March 2022 - February 2023</p>
+              <br />
+              <div class="key-wins-list">
+                <ul>
+                  <li>
+                    Led a successful two-month project from inception to deployment, overseeing Jira ticket
+                    administration, driving Scrum ceremonies, conducting code reviews and resolving team conflicts.
+                  </li>
+                  <li>
+                    Collaborated with a cross-functional team of four individuals to develop and deliver comprehensive
+                    training sessions to a group of 20 users.
+                  </li>
+                  <li>
+                    Constructed and maintained a snippet library, streamlining the implementation of new projects and
+                    reducing project completion time by 10%.
+                  </li>
+                  <li>
+                    Authored documentation on best practices to implement new projects from scratch, reducing onboarding
+                    time for new team members by 15%.
+                  </li>
+                </ul>
+              </div>
+              <h4>Role Responsabilities</h4>
+              <div class="key-wins-list">
+                <ul>
+                  <li>
+                    Conduct backend development with microservices in Node.js.
+                  </li>
+                  <li>
+                    Engage in daily customer interactions to understand and implement optimal solutions.
+                  </li>
+                  <li>
+                    Develop JavaScript code for frontend data validation and seamless API interaction.
+                  </li>
+                  <li>
+                    Utilize HTML and CSS to craft custom designs tailored to specific customer requirements.
+                  </li>
+                </ul>
+              </div>
+              <br />
+            </div>
+          </div>
         </div>
-      </section> -->
+      </div>
+    </section>
 
-      <!-- Projects Section -->
-      <section class="section-even" id="projects">
-        <div class="projects">
-          <h2>Projects</h2>
-          <div class="flex-container">
+    <!-- Projects Section -->
+    <section class="section-even" id="projects">
+      <div class="projects">
+        <h2>Projects</h2>
+        <div class="row">
+          <div class="column">
             <div class="project-card">
-              <h3>Sofya Store</h3>
+              <h3><strong>DentivaCare</strong></h3>
+              <br />
+              <p>
+                <i><strong>DentivaCare</strong></i> is an application designed for storing,
+                managing, and monitoring patients within an odontological clinic.
+                It allows the user to register new patients, schedule appointments,
+                and keep track of their treatments.
+                <br />
+                <br />
+                The application is built with Angular, Bootstrap,
+                Node.js with Typescript, Express.js as the backend framework
+                for the API and MongoDB for persistance.
+                <br />
+                It integrates with Mailtrap for email notifications. The frontend app is deployed
+                on Vercel and the backend on Heroku.
+              </p>
+              <br />
+              <a class="btn btn-secondary" aria-label="Visit Free Code Camp solution site"
+                href="https://odontogram.com.ar" target="_blank">
+                visit site <i class="fa fa-light fa fa-link"></i>
+              </a>
+              <!-- <a class="btn-terciary" aria-label="Visit Github project repository" href="https://github.com/7Rena7/"
+                target="_blank">
+                <i class="fab fa-github"></i>
+              </a> -->
+            </div>
+          </div>
+          <div class="column">
+            <div class="project-card">
+              <h3><strong>Sofya Store</strong></h3>
               <br />
               <p>
                 <i><strong>Sofya </strong></i> is an online store designed to
@@ -168,38 +296,27 @@
                 <br />
               </p>
               <br />
-              <a
-                class="btn btn-secondary"
-                aria-label="Visit Free Code Camp solution site"
-                href="https://sofya-store.vercel.app/home"
-                target="_blank"
-              >
+              <a class="btn btn-secondary" aria-label="Visit Free Code Camp solution site"
+                href="https://sofya-store.vercel.app/home" target="_blank">
                 visit site <i class="fa fa-light fa fa-link"></i>
               </a>
-              <a
-                class="btn-terciary"
-                aria-label="Visit Github project repository"
-                href="https://github.com/7Rena7/sofya-store"
-                target="_blank"
-              >
+              <a class="btn-terciary" aria-label="Visit Github project repository"
+                href="https://github.com/7Rena7/sofya-store" target="_blank">
                 <i class="fab fa-github"></i>
               </a>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
             <div class="project-card">
-              <h3><i>FreeCodeCamp</i> JavaScript Challenges</h3>
+              <h3><strong><i>FreeCodeCamp</i> JavaScript Challenges</strong></h3>
               <br />
               <p>
                 My solutions to the challenges presented in the final section of
                 the
-                <a
-                  href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
-                  target="_blank"
-                  ><i
-                    ><strong
-                      >JavaScript Algorithms and Data Structures Course</strong
-                    ></i
-                  ></a
-                >.
+                <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
+                  target="_blank"><i><strong>JavaScript Algorithms and Data Structures Course</strong></i></a>.
               </p>
               <br />
               <p>
@@ -210,152 +327,128 @@
                 <strong>US Telephone Number Validator</strong>.
               </p>
               <br />
-              <a
-                class="btn btn-secondary"
-                aria-label="Visit Free Code Camp solution site"
-                href="https://fcc-challenges.vercel.app/"
-                target="_blank"
-              >
+              <a class="btn btn-secondary" aria-label="Visit Free Code Camp solution site"
+                href="https://fcc-challenges.vercel.app/" target="_blank">
                 visit site <i class="fa fa-light fa fa-link"></i>
               </a>
-              <a
-                class="btn-terciary"
-                aria-label="Visit Github project repository"
-                href="https://github.com/7Rena7/fcc-challenges"
-                target="_blank"
-              >
+              <a class="btn-terciary" aria-label="Visit Github project repository"
+                href="https://github.com/7Rena7/fcc-challenges" target="_blank">
                 <i class="fab fa-github"></i>
               </a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- My Stack -->
-      <section class="section-odd" id="stack">
-        <div class="stack">
-          <h2>My Stack</h2>
-          <div class="stack-card">
-            <figure class="tech-item">
-              <img
-                src="./img/html-logo.png"
-                alt="HTML logo"
-                loading="lazy"
-                #html-img
-              />
-              <figcaption>HTML 5</figcaption>
-            </figure>
-            <figure class="tech-item">
-              <img src="./img/css-logo.png" alt="CSS logo" loading="lazy" />
-              <figcaption>CSS 3</figcaption>
-            </figure>
-            <figure class="tech-item">
-              <img
-                src="./img/typescript.png"
-                alt="Typescript logo"
-                loading="lazy"
-              />
-              <figcaption>TypeScript</figcaption>
-            </figure>
-            <figure class="tech-item">
-              <img
-                src="./img/javascript-logo.png"
-                alt="JavaScript logo"
-                loading="lazy"
-              />
-              <figcaption>JavaScript</figcaption>
-            </figure>
-            <figure class="tech-item">
-              <img src="./img/angular.png" alt="Angular logo" loading="lazy" />
-              <figcaption>Angular</figcaption>
-            </figure>
-            <figure class="tech-item">
-              <img src="./img/node.png" alt="Node logo" loading="lazy" />
-              <figcaption>Node.js</figcaption>
-            </figure>
-            <figure class="tech-item">
-              <img src="./img/mongodb.png" alt="MongoDB logo" loading="lazy" />
-              <figcaption>MongoDB</figcaption>
-            </figure>
-            <figure class="tech-item">
-              <img src="./img/sql.png" alt="PostgreSQL logo" loading="lazy" />
-              <figcaption>PostgreSQL</figcaption>
-            </figure>
-            <figure class="tech-item">
-              <img src="./img/csharp.png" alt="C# logo" loading="lazy" />
-              <figcaption>C#</figcaption>
-            </figure>
-            <figure class="tech-item">
-              <img src="./img/git-logo.png" alt="Git logo" loading="lazy" />
-              <figcaption>GIT</figcaption>
-            </figure>
-            <figure class="tech-item">
-              <img src="./img/github.png" alt="Github logo" loading="lazy" />
-              <figcaption>GitHub</figcaption>
-            </figure>
-            <figure class="tech-item">
-              <img
-                src="./img/azure-devops.webp"
-                alt="Azure DevOps logo"
-                loading="lazy"
-              />
-              <figcaption>Azure DevOps</figcaption>
-            </figure>
-          </div>
-          <h4>Currently learning</h4>
-          <div class="learning-card">
-            <figure class="tech-item">
-              <img src="./img/aws.png" alt="AWS logo" loading="lazy" />
-              <figcaption>AWS</figcaption>
-            </figure>
-            <figure class="tech-item">
-              <img src="./img/python.avif" alt="AWS logo" loading="lazy" />
-              <figcaption>Python</figcaption>
-            </figure>
-          </div>
+    <!-- My Stack -->
+    <section class="section-odd" id="stack">
+      <div class="stack">
+        <h2>My Stack</h2>
+        <div class="stack-card">
+          <figure class="tech-item">
+            <img src="./img/angular.png" alt="Angular logo" loading="lazy" />
+            <figcaption>Angular</figcaption>
+          </figure>
+          <figure class="tech-item">
+            <img src="./img/node.png" alt="Node logo" loading="lazy" />
+            <figcaption>Node.js</figcaption>
+          </figure>
+          <figure class="tech-item">
+            <img src="./img/javascript-logo.png" alt="JavaScript logo" loading="lazy" />
+            <figcaption>JavaScript</figcaption>
+          </figure>
+          <figure class="tech-item">
+            <img src="./img/typescript.png" alt="Typescript logo" loading="lazy" />
+            <figcaption>TypeScript</figcaption>
+          </figure>
+          <figure class="tech-item">
+            <img src="./img/express-logo.png" alt="Express.js logo" loading="lazy" />
+            <figcaption>Express.js</figcaption>
+          </figure>
+          <figure class="tech-item">
+            <img src="./img/mongodb.png" alt="MongoDB logo" loading="lazy" />
+            <figcaption>MongoDB</figcaption>
+          </figure>
+          <figure class="tech-item">
+            <img src="./img/sql.png" alt="PostgreSQL logo" loading="lazy" />
+            <figcaption>PostgreSQL</figcaption>
+          </figure>
+          <figure class="tech-item">
+            <img src="./img/mysql-logo.png" alt="MySQL logo" loading="lazy" />
+            <figcaption>MySQL</figcaption>
+          </figure>
+          <figure class="tech-item">
+            <img src="./img/html-logo.png" alt="HTML logo" loading="lazy" #html-img />
+            <figcaption>HTML 5</figcaption>
+          </figure>
+          <figure class="tech-item">
+            <img src="./img/css-logo.png" alt="CSS logo" loading="lazy" />
+            <figcaption>CSS 3</figcaption>
+          </figure>
+          <figure class="tech-item">
+            <img src="./img/git-logo.png" alt="Git logo" loading="lazy" />
+            <figcaption>GIT</figcaption>
+          </figure>
+          <figure class="tech-item">
+            <img src="./img/github.png" alt="Github logo" loading="lazy" />
+            <figcaption>GitHub</figcaption>
+          </figure>
         </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__row">
-          <div class="footer__col">
-            <h4>Sections</h4>
-            <ul>
-              <li><a href="#about">about</a></li>
-              <li><a href="#projects">projects</a></li>
-              <li><a href="#stack">stack</a></li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <h4>Social media</h4>
-            <a
-              class="btn-terciary"
-              id="linkedIn-about"
-              aria-label="Visit LinkedIn profile"
-              href="https://www.linkedin.com/in/renato-corbellini-99155a175/"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a
-              class="btn-terciary"
-              aria-label="Visit Github profile"
-              href="https://github.com/7Rena7"
-              target="_blank"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
+        <h4>Currently learning</h4>
+        <div class="learning-card">
+          <figure class="tech-item">
+            <img src="./img/aws.png" alt="AWS logo" loading="lazy" />
+            <figcaption class="aws-img-caption">Amazon Web <br /> Services</figcaption>
+          </figure>
+          <figure class="tech-item">
+            <img src="./img/docker.png" alt="Docker logo" loading="lazy" />
+            <figcaption>Docker</figcaption>
+          </figure>
+          <figure class="tech-item">
+            <img src="./img/kubernetes.png" alt="Kubernetes logo" loading="lazy" />
+            <figcaption>Kubernetes</figcaption>
+          </figure>
+          <figure class="tech-item">
+            <img src="./img/nest.png" alt="Nest logo" loading="lazy" />
+            <figcaption>Nest.js</figcaption>
+          </figure>
         </div>
       </div>
-    </footer>
-    <div class="credits">
-      <p>Developed with HTML, CSS and vanilla Javascript</p>
-    </div>
+    </section>
+  </main>
 
-    <script type="module" src="./main/index.js" async defer></script>
-  </body>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__row">
+        <div class="footer__col">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#stack">stack</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Social media</h4>
+          <a class="btn-terciary" id="linkedIn-about" aria-label="Visit LinkedIn profile"
+            href="https://www.linkedin.com/in/renato-corbellini-fullstack-developer" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a class="btn-terciary" aria-label="Visit Github profile" href="https://github.com/7Rena7" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="credits">
+    <p>Developed with HTML, CSS and vanilla Javascript</p>
+  </div>
+
+  <script type="module" src="./main/index.js" async defer></script>
+</body>
+
 </html>
